@@ -1,0 +1,81 @@
+@import 'antd/dist/antd.css';
+
+.App {
+  text-align: center;
+  background-color:#282c34;;
+}
+
+.ant-page-header-heading-title,.anticon-arrow-left {
+  color: white !important;
+}
+
+.ant-form-vertical .ant-form-item-label > label, .ant-col-24.ant-form-item-label > label, .ant-col-xl-24.ant-form-item-label > label {
+  margin: 0;
+  color: white;
+}
+.mainscreen{
+  margin-top:20px;
+}
+.order-summary { grid-area: order-summary; }
+.total-items { grid-area: total-items; }
+.t-i { grid-area: t-i; }
+.sub-total  { grid-area: sub-total ; }
+.s-t { grid-area: s-t; }
+
+.grid-container {
+  border: 1px solid 	#404040;
+  border-radius: 5px;
+  height: 547px;
+  background-image: linear-gradient(180deg, #444953,	#5c616b);
+  display: grid;
+  grid-template-areas:
+    'order-summary order-summary order-summary order-summary order-summary order-summary'
+    'total-items total-items total-items t-i t-i  t-i '
+    'sub-total sub-total sub-total s-t s-t s-t';
+  padding: 20px;
+}
+.order-summary {
+  color: white !important;
+  font-weight: bold;
+  font-size: 120%;
+  text-align: left !important;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.total-items{
+  margin-top:-120px;
+  color: white;
+  text-align: left !important;
+  padding-left: 20px;
+  text-shadow: black;
+}
+
+.t-i{
+  margin-top:-120px;
+  color: white;
+  text-align: right !important;
+  padding-right: 20px;
+  text-shadow: black;
+
+}
+.sub-total {
+  margin-top:-230px;
+  color: white;
+  text-align: left !important;
+  padding-left: 20px;
+  text-shadow: black;
+}
+.s-t{
+  margin-top:-230px;
+  color: white;
+  text-align: right !important;
+  padding-right: 20px;
+  text-shadow: black;
+}
+
+
+.ant-input{
+  background-color: #444953 !important;
+  border-color: #282c34;
+  border-radius: 5px !important;
+}
